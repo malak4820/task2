@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5fafd;
+    color: #333;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 20px; /* Adjust spacing between logo and navigation */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding-bottom: 5px; /* Create space for the underline */
+    position: relative; /* Make the link a positioning context */
+}
+
+.nav-links a:hover::after,
+.nav-links a:focus::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #007bff; /* The color of the underline */
+    transform: scaleX(1); /* Scale effect */
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #007bff;
+    transform: scaleX(0); /* Hidden by default */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+
+.login {
+    margin-left: auto; /* Move login to the far right */
+}
+
+.login a {
+    text-decoration: none;
+    background-color: #ddd;
+    color: #111;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+
+.a {
+    /* background-image: url("img/blue_bg.png");
+    background-size: cover;
+    background-position: bottom; */
+    /* background-repeat: no-repeat; */
+    width: 100%;
+    height: 80%;
+    display: flex;  /* استخدام flex لتوزيع النص والصور */
+    justify-content: space-between;  /* توزيع العناصر على الجانبين */
+    align-items: center;  /* محاذاة العناصر في الوسط عمودياً */
+    padding: 100px 10%;  /* مسافة داخلية حول القسم */
+}
+
+.a1 {
+    width: 50%;  /* عرض الجزء الخاص بالنص */
+}
+
+.a1 h1 {
+    font-size: 40px;
+    padding: 40px 20px;
+    border-radius: 20px;
+    margin-right: 0;  /* إزالة المسافة اليمنى */
+    margin-left: 0;  /* يمكنك تعديل هذه القيمة حسب الحاجة */
+}
+
+.a1 span {
+    color: #007bff;
+}
+
+.a1 p {
+    margin-top: 15px;
+    font-size: 20px;
+    padding-left: 40px;
+    font-family: sans-serif;
+    width: 420px;
+    opacity: 0.7;
+}
+
+.a2 {
+    position: relative;
+    width: 50%;  /* عرض الجزء الخاص بالصور */
+}
+
+.a2 .a6 {
+    position: absolute;
+    right: -220px;
+    top: -250px;
+}
+
+.a2 .a7 {
+    position: absolute;
+    right: -6px;
+    top: -190px;
+}
+
+.a2 .a8 {
+    position: absolute;
+    right: -145px;
+    top: 173px;
+}
+
+.a2 .a9 {
+    position: absolute;
+    right: 90px;
+    top: 200px;
+}
+
+.a::after{
+    content: " ";
+    background-image: url("img/blue_bg.png");
+    background-size: cover;
+    background-position: bottom;
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    width: 100%;
+    height: 80%;
+}
+
+.features {
+    display: flex;
+    margin-top: 200px;
+    justify-content: space-around;
+    padding: 60px 10%;
+    background-color: #f0f8ff;
+    text-align: center;
+}
+
+.feature-item {
+    max-width: 300px;
+}
+
+.feature-item img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.feature-item h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+.divv img{
+    position: absolute;
+    top: 1150px;
+    left: 190px;
+    width: 200px;
+}
+.divv h3{
+    position: absolute;
+    top: 1207px;
+    left: 230px;
+    font-size: 12px;
+    color: #ddd;
+}
+.divv h3 span{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 17px;
+    color: #ddd;
+}
+
+.feature-item p {
+    color: #666;
+} 
+.f2{
+    margin-top: 150px;
+}
+
+.f3{
+    margin-top:350px ;
+    padding-right: 50px;
+}
+.feature-image-center img{
+    position: absolute;
+    top: 730px;
+    right: 350px;
+    width: 850px;
+}
+
+.three-part-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+    background-color: #f5fafd;
+}
+
+.part {
+    margin: 20px 0;
+}
+
+/* الجزء الأول */
+.first-part img {
+    width: 100%;
+    max-width: 200px;  /* حجم الصورة في الجزء الأول */
+    height: auto;
+}
+
+/* الجزء الثاني */
+.second-part {
+    margin-top: 50px;
+}
+
+.icons-and-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.icon {
+    width: 80px;
+    height: auto;
+}
+
+.main-image {
+    width: 400px;  /* حجم الصورة في الجزء الثاني */
+    height: auto;
+}
+
+.second-part h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.second-part p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* الجزء الثالث */
+.third-part img {
+    width: 100%;
+    max-width: 200px;  /* حجم الصورة في الجزء الثالث */
+    height: auto;
+}
+
+
+
+footer {
+    position: relative;
+    background-image: url("img/Group\ 1131.png");
+    background-size: cover; /* تغطية الخلفية بالكامل */
+    background-position: center; /* توسيط الخلفية */
+    background-repeat: no-repeat;
+    color: white; /* استخدام لون أبيض للنص للتباين مع الخلفية */
+    padding: 40px 10%;
+    text-align: left;
+    height: 500px;
+    display: flex;
+    align-items: center; /* محاذاة المحتوى لأسفل الخلفية */
+}
+
+.footer-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* طبقة شفافة باللون الأسود */
+    z-index: 1;
+}
+
+.footer-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* محاذاة المحتوى للنهاية */
+    align-items: flex-start; /* محاذاة العناصر من اليسار */
+    width: 100%;
+}
+
+.social-media,
+.div,
+.footer-links {
+    padding: 10px 0;
+}
+
+.social-media {
+    display: flex;
+    gap: 20px;
+}
+.social-media a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #111;
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 10px;
+}
+.div {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.footer-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.im img{
+    position: absolute;
+    top: -70px;
+    right: 80px;
+    width: 550px;
+}
+
